@@ -18,8 +18,8 @@ function returnAverageStepGoalAllUsers(usersData) {
     return avgStepGoalAllUsers
 }; 
 
-function getRandomUser(array) {
-    return Math.floor(Math.random() * array.length);
+function getRandomUser(userData) {
+    return Math.floor(Math.random() * userData.UserData.length);
 };
 
 export {
