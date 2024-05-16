@@ -14,20 +14,24 @@ window.addEventListener('load', () => {
 });
 
 const retrieveRandomUser = (users) => {
-  const randomUser = getRandomUser(users);
-  const user = getUserData(allUsers,randomUser.id)
+  const user = getRandomUser(users);
   return user
 }
 
-const displayUserGoal = (users) => {
-  userStepGoalDisplay.innerText = `${}`
+const retrieveRandomUserData = (randomUser) => {
+const user = getUserData(allUsers,randomUser.id)
+return user
 }
 
-const displayAverageSteps = (users) => {
+const displayUserGoal = (user) => {
+  userStepGoalDisplay.innerText = `${user.dailyStepGoal}`
+}
+
+const displayAverageSteps = (user) => {
   averageStepDisplay.innerText = `${}`
 }
 
-function updateRandomUserMessage(users) {
+function updateRandomUserMessage(user) {
   updateUserCard(user)
   updateUserMessage(randomUser);
 }
@@ -37,9 +41,9 @@ function updateUserCard(user) {
   userStrideLength.innerText = `Stride Length: ${user.strideLength}`
 }
 
-const updateUserMessage = (users) => {  
+const updateUserMessage = (user) => {  
   userMessageInfo.innerHTML = `<header>
-  <h1 class="welcome-message">Welcome ${users.name}</h1>
+  <h1 class="welcome-message">Welcome ${user.name}</h1>
   </header>`;
 };
 
