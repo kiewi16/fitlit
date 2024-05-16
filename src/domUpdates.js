@@ -31,12 +31,12 @@ const displayAverageSteps = (user) => {
   averageStepDisplay.innerText = `${}`
 }
 
-function updateRandomUserMessage(user) {
+const updateRandomUserMessage = (user) => {
   updateUserCard(user)
   updateUserMessage(randomUser);
 }
 
-function updateUserCard(user) {
+const updateUserCard = (user) => {
   userIdAddressEmail.innerText = `ID: ${user.id}, Address: ${user.address}, Email: ${user.email}`
   userStrideLength.innerText = `Stride Length: ${user.strideLength}`
 }
