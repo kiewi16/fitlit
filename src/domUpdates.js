@@ -13,13 +13,21 @@ window.addEventListener('load', () => {
   updateRandomUserMessage(allUsers);
 });
 
-
-const displayUserGoal = () => {}
-const displayAverageSteps = () => {}
-
-function updateRandomUserMessage(users) {
+const retrieveRandomUser = (users) => {
   const randomUser = getRandomUser(users);
   const user = getUserData(allUsers,randomUser.id)
+  return user
+}
+
+const displayUserGoal = (users) => {
+  userStepGoalDisplay.innerText = `${}`
+}
+
+const displayAverageSteps = (users) => {
+  averageStepDisplay.innerText = `${}`
+}
+
+function updateRandomUserMessage(users) {
   updateUserCard(user)
   updateUserMessage(randomUser);
 }
@@ -40,4 +48,3 @@ export {
   displayAverageSteps,
   updateUserMessage
 };
-
