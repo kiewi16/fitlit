@@ -18,20 +18,20 @@ const userAddress = document.querySelector('.user-address');
 const userStrideLength = document.querySelector('.user-stride-length');
 const friendsWrapper = document.querySelector('.friends-wrapper');
 const userInfo = document.querySelector('.user-info');
-const OpenModalBtn = document.getElementById('openModalBtn');
-const submitBtn = document.getElementById('submitBtn')
-const form = document.getElementById('detailsModal');
+const openSleepInputFormButton = document.getElementById('open-sleep-input-form-button');
+const sleepSubmitButton = document.getElementById('sleep-submit-button')
+const form = document.getElementById('sleep-input-form');
 
 
 window.addEventListener('load', () => {
   fetchUserData()
 })
 
-OpenModalBtn.addEventListener('click', function(){
+openSleepInputFormButton.addEventListener('click', function(){
   form.style.display = 'block';
 })
 
-submitBtn.addEventListener('click', function(){
+sleepSubmitButton.addEventListener('click', function(){
   form.style.display = 'none';
 })
 
