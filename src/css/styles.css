@@ -75,6 +75,10 @@ p {
   /* height: fit-content; */
 }
 
+.chart-wrapper {
+  border: solid 2pt black;
+}
+
 #activities-dashboard-wrapper {
   background-color: var(--step-goal-color);
   background-size: cover;
