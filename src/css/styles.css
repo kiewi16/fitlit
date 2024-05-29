@@ -55,6 +55,7 @@ p {
 
 .body-wrapper {
   display: flex;
+  justify-content: center;
   margin-left: 5vw;
   margin-right: 5vw;
   border-radius: var(--section-border-radius);
@@ -118,7 +119,7 @@ p {
   text-align: center;
   width: 30rem;
   line-height: 2.5;
-  margin: .5rem;
+  margin: .2rem;
   height: 15rem;
 }
 
