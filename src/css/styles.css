@@ -116,21 +116,14 @@ p {
 .user-sleep-alltime {
   border: solid 2pt black;
   border-radius: var(--section-border-radius);
-  text-align: center;
-  width: 30rem;
-  line-height: 2.5;
   margin: .2rem;
-  height: 15rem;
+  height: 12rem;
 }
 
-.chart-section {
-  border: solid 2pt black;
-  border-radius: var(--section-border-radius);
-  text-align: center;
-  width: 25rem;
-  line-height: 1.5;
-  margin: .5rem;
-  height: 12rem;
+.user-sleep-day,
+.user-sleep-week,
+.user-sleep-alltime {
+  background-color: var(--sleep-color)
 }
 
 .user-hydration-week,
@@ -154,12 +147,6 @@ p {
 .user-step-goal, 
 .average-goal-steps {
   background-color: var(--step-goal-color);
-}
-
-.user-sleep-day,
-.user-sleep-week,
-.user-sleep-alltime {
-  background-color: var(--sleep-color)
 }
 
 .user-friend {
