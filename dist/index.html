@@ -49,7 +49,7 @@
       <!-- <h4 class="display-hydration-dashboard">
         Hydration Dashboard
       </h4> -->
-      <section class="section-wrapper" id="hydration-wrapper">
+      <section class="section-wrapper" id="hydration-section-wrapper">
         <div class="user-hydration-day">
           <canvas id="hydrationDayChart" width="400" height="400">
           </canvas>
@@ -62,57 +62,57 @@
       <!-- <h4 class="display-sleep-dashboard">
         Sleep Dashboard
       </h4> -->
-      <section class="section-wrapper" id="sleep-wrapper">
+      <section class="section-wrapper" id="sleep-section-wrapper">
         <div class="user-sleep-day">
           <div class="hours-slept">
-            <canvas id="sleepHoursDailyChart" width="300" height="300">
+            <canvas id="sleepHoursDailyChart" width="150" height="150">
             </canvas>
           </div>
           <div class="quality-of-sleep">
-            <canvas id="sleepQualityDailyChart" width="300" height="300">
+            <canvas id="sleepQualityDailyChart" width="150" height="150">
             </canvas>
           </div>
         </div>
         <div class="user-sleep-week">
-          <canvas id="sleepHoursandQualityWeekChart" width="1000" height="500">
+          <canvas id="sleepHoursandQualityWeekChart" width="800" height="400">
           </canvas>
         </div>
         <div class="user-sleep-alltime">
           <div class="hours-slept-alltime">
-            <canvas id="sleepHoursAverageChart" width="400" height="400">
+            <canvas id="sleepHoursAverageChart" width="150" height="150">
             </canvas>
           </div>
           <div class="quality-of-sleep-alltime">
-            <canvas id="sleepQualityAverageChart" width="400" height="400">
+            <canvas id="sleepQualityAverageChart" width="150" height="150">
             </canvas>
           </div>
         </div>
       </section>
-    </main>
-    <section class="friends-section">
-      <h4 class="friends-header">
-        Friends
-      </h4>
-      <section class="friends-wrapper">
-      </section>
-    </section>
-    <section class="sleep-input-form-wrapper">
-      <button id="open-sleep-input-form-button">Input Sleep Data</button>
-      <section id="sleep-input-form" style="display: none">
-          <h2>Enter Sleep Details</h2>
-          <form>
-              <label for="date">Date</label>
-              <input type="date" id="date" name="date">
-              
-              <label for="hours-slept">Hours Slept</label>
-              <input type="number" id="hours-slept" name="hours-slept" placeholder="24hrs" min="0" max="24">
-              
-              <label for="quality-of-sleep">Quality of Sleep</label>
-              <input type="number" id="quality-of-sleep" name="quality-of-sleep" placeholder="0-5" min="0" max="5">
-          </form>
-          <button id="sleep-submit-button">Submit</button>
+      <section class="section-wrapper" id="friends-section">
+        <h4 class="friends-header">
+          Friends
+        </h4>
+        <section class="friends-wrapper">
         </section>
-    </section>
+      </section>
+      <section class="sleep-input-form-wrapper">
+        <button id="open-sleep-input-form-button">Input Sleep Data</button>
+        <section id="sleep-input-form" style="display: none">
+            <h2>Enter Sleep Details</h2>
+            <form>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+                
+                <label for="hours-slept">Hours Slept</label>
+                <input type="number" id="hours-slept" name="hours-slept" placeholder="24hrs" min="0" max="24">
+                
+                <label for="quality-of-sleep">Quality of Sleep</label>
+                <input type="number" id="quality-of-sleep" name="quality-of-sleep" placeholder="0-5" min="0" max="5">
+            </form>
+            <button id="sleep-submit-button">Submit</button>
+          </section>
+      </section>
+    </main>
   </section>
   <!-- Do not include the scripts.js file here - it is done automatically by the webpack server -->
   <script src="bundle.js">

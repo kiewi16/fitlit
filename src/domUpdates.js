@@ -1,5 +1,12 @@
 import { fetchData } from './apiCalls.js'
-import { createFriendChart, createSleepHoursAverageChart,
+import { getRandomUser, getUserData } from '../src/userFunctions.js'
+import { 
+  getCurrentDayWaterConsumption, 
+  getConsumedWaterForWeek, 
+  getConsumedWaterDates } from '../src/hydration.js';
+import { 
+  createFriendChart, 
+  createSleepHoursAverageChart,
   createSleepQualityAverageChart,
   createSleepQualityDailyChart,
   createSleepHoursDailyChart,
@@ -7,9 +14,13 @@ import { createFriendChart, createSleepHoursAverageChart,
   createStepCharts,
   createHydrationWeekChart,
   createHydrationDayChart } from './domCharts.js'
-import { getRandomUser, getUserData} from '../src/userFunctions.js'
-import { getCurrentDayWaterConsumption, getConsumedWaterForWeek, getConsumedWaterDates } from '../src/hydration.js';
-import { getHoursSleptForCurrentDay, getSleepHoursForWeek, getSleepDates, getSleepQualityForWeek, getUserAverageHoursSlept, getUserAverageSleepQuality } from './sleep.js';
+import { 
+  getHoursSleptForCurrentDay, 
+  getSleepHoursForWeek, 
+  getSleepDates, 
+  getSleepQualityForWeek, 
+  getUserAverageHoursSlept, 
+  getUserAverageSleepQuality } from './sleep.js';
 
 
 const welcomeMessage = document.querySelector('.welcome-message');

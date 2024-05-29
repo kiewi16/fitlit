@@ -55,7 +55,8 @@ p {
 
 .body-wrapper {
   display: flex;
-  margin-left: 70px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   border-radius: var(--section-border-radius);
 }
 
@@ -69,17 +70,8 @@ p {
   justify-content: space-evenly;
   align-items: center;
   width: 80vw;
-  height: fit-content;
-}
-
-#user-info-wrapper {
-  border: solid 1pt black;
-  margin-left: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--user-info-color);
+  height: 16.5vh;
+  /* height: fit-content; */
 }
 
 #activities-dashboard-wrapper {
@@ -103,18 +95,25 @@ p {
   margin: 0;
 }
 
-#hydration-wrapper {
+#user-info-wrapper {
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  background-color: var(--user-info-color);
+}
+
+#hydration-section-wrapper {
   background-color: var(--hydration-color);
 }
 
-#sleep-wrapper {
+#sleep-section-wrapper {
   background-color: var(--sleep-color);
 }
 
 .user-sleep-day, 
 .user-sleep-week, 
 .user-sleep-alltime {
-  border: solid 3pt black;
+  border: solid 2pt black;
   border-radius: var(--section-border-radius);
   text-align: center;
   width: 30rem;
@@ -123,11 +122,21 @@ p {
   height: 15rem;
 }
 
+.chart-section {
+  border: solid 2pt black;
+  border-radius: var(--section-border-radius);
+  text-align: center;
+  width: 25rem;
+  line-height: 1.5;
+  margin: .5rem;
+  height: 12rem;
+}
+
 .user-hydration-week,
 .user-hydration-day,
 .user-step-goal,
 .average-goal-steps {
-  border: solid 3pt black;
+  border: solid 2pt black;
   border-radius: var(--section-border-radius);
   text-align: center;
   width: 25rem;
@@ -154,7 +163,7 @@ p {
 
 .user-friend {
   background-color: var(--friend-color);
-  border: solid 3pt black;
+  border: solid 2pt black;
   border-radius: var(--section-border-radius);
   text-align: center;
   width: 8rem;
@@ -163,24 +172,15 @@ p {
   margin-left: 8px;
 }
 
-.friends-section {
-  border: 1pt solid black;
-  margin-left: 25px;
-  text-align: center;
-  border-radius: var(--section-border-radius);
+#friends-section {
   background-color: var(--friend-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
 }
 
 .friends-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
-  height: 50vh;
-  width: 150px;
+  /* height: 20vh; */
 }
 
 .steps-wrapper {
