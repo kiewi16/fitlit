@@ -49,8 +49,6 @@ p {
 
 .user-info {
   font-size: 36px;
-  border: 0;
-  margin: 0 0 0 5;
 }
 
 .body-wrapper {
@@ -72,16 +70,6 @@ p {
   align-items: center;
   width: 80vw;
   height: 16.5vh;
-  /* height: fit-content; */
-}
-
-.steps-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80vw;
-  height: fit-content;
-  border-radius: var(--section-border-radius);
 }
 
 .chart-wrapper {
