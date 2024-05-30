@@ -146,8 +146,7 @@ p {
 }
 
 #user-step-goal-chart, 
-#user-friends-average-goal-chart, 
-#sleepHoursWeekChart {
+#user-friends-average-goal-chart {
   display: block;
   margin: auto;
   padding: 0;
