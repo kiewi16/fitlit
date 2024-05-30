@@ -75,17 +75,25 @@ p {
   /* height: fit-content; */
 }
 
+.steps-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  height: fit-content;
+  border-radius: var(--section-border-radius);
+}
+
 .chart-wrapper {
   border: solid 2pt black;
+  width: 25rem;
+  margin: .2rem;
+  height: 12rem;
+  border-radius: var(--section-border-radius);
 }
 
 #activities-dashboard-wrapper {
   background-color: var(--step-goal-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: var(--section-border-radius);
-  border: 1pt solid black;
 }
 
 .display-activities-dashboard {
@@ -101,10 +109,9 @@ p {
 }
 
 #user-info-wrapper {
-  flex-direction: column;
-  /* justify-content: center; */
-  text-align: center;
   background-color: var(--user-info-color);
+  flex-direction: column;
+  text-align: center;
 }
 
 #hydration-section-wrapper {
@@ -115,42 +122,26 @@ p {
   background-color: var(--sleep-color);
 }
 
-.user-sleep-day, 
-.user-sleep-week, 
-.user-sleep-alltime {
-  border: solid 2pt black;
-  border-radius: var(--section-border-radius);
-  margin: .2rem;
-  height: 12rem;
+#user-sleep-day, 
+#user-sleep-week, 
+#user-sleep-alltime {
+  background-color: var(--sleep-color);
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.user-sleep-day,
-.user-sleep-week,
-.user-sleep-alltime {
-  background-color: var(--sleep-color)
+#user-sleep-week {
+  width: 15rem;
 }
 
-.user-hydration-week,
-.user-hydration-day,
-.user-step-goal,
-.average-goal-steps {
-  border: solid 2pt black;
-  border-radius: var(--section-border-radius);
-  text-align: center;
-  width: 25rem;
-  line-height: 1.5;
-  margin: .5rem;
-  height: 12rem;
-}
-
-.user-hydration-day,
-.user-hydration-week {
-  background-color: var(--hydration-color);
-}
-
-.user-step-goal, 
-.average-goal-steps {
+#user-step-goal, 
+#average-goal-steps {
   background-color: var(--step-goal-color);
+}
+
+#user-hydration-day,
+#user-hydration-week {
+  background-color: var(--hydration-color);
 }
 
 .user-friend {
@@ -172,16 +163,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* height: 20vh; */
-}
-
-.steps-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80vw;
-  height: fit-content;
-  border-radius: var(--section-border-radius);
 }
 
 .friends-header {
@@ -194,10 +175,4 @@ p {
   display: block;
   margin: auto;
   padding: 0;
-}
-
-.user-sleep-day, 
-.user-sleep-alltime {
-  display: flex;
-  justify-content: space-evenly;
 }
