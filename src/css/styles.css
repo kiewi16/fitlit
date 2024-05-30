@@ -29,7 +29,7 @@ header {
   text-align: center;
 }
 
-h3 {
+h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -82,18 +82,6 @@ p {
 
 #activities-dashboard-wrapper {
   background-color: var(--step-goal-color);
-}
-
-.display-activities-dashboard {
-  background-color: var(--page-background-color);
-}
-
-.display-activities-dashboard, 
-.display-hydration-dashboard,
-.display-sleep-dashboard {
-  font-size: 30px;
-  text-align: center;
-  margin: 0;
 }
 
 #user-info-wrapper {
