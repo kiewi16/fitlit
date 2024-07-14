@@ -1,7 +1,7 @@
 # FitLit
 
 ### Abstract
-For this project, we fetched data from multiple endpoints to display information on a dashboard. We also posted the data upon user input from the form. User is greeted with a custom welcome message along with their user information. Then the user is presented with a dashboard, being able to see specific activities based on day/week/all time. User's friend's step goals are also displayed alongside the dashboard.
+Data was fetched from multiple endpoints to display information on a dashboard. We also posted the data upon user input from the form. User is greeted with a custom welcome message along with their user information. The user is then presented with a dashboard that contains specific activities based on day/week/all time. User's friend's step goals are also displayed alongside the dashboard.
 
 ### Installation Instructions for Front-End
 1. Fork the repository
@@ -28,13 +28,13 @@ Javascript, TypeScript, Mocha, Chai, Webpack, HTML, CSS, Chart.js
 ### Reflections
 *Wins*
 1. Implementation of data visualization through Chart.js.
-2. Successfully fetching data to display it in the DOM.
-3. Being able to post user data on the DOM and update DOM without refreshing the page.
+2. Successfully fetching data to display it on the DOM.
+3. Ability to post user data on the DOM and update DOM without refreshing the page.
 4. Converting JavaScript to TypeScript.
     
 *Challenges*
 1. Understanding the date methods through import/export.
-2. Error handling for the separate input fields and button click. 
+2. Error handling for the separate sleep input fields and button click. 
    
 ### Working app
 ![Screenshot 2024-06-02 at 3 44 09 PM](https://github.com/kiewi16/fitlit/assets/127267694/7960b8a3-3f21-41b1-ba4d-1aed3b7a39c2)
